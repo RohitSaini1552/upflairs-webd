@@ -1,0 +1,54 @@
+/* Create a <div> box with: */
+.box {
+    width: 300px;
+    height: 150px;
+    background-color: lightblue;
+    border: 2px solid navy;
+    
+}
+
+/* Create a <p> paragraph inside the div with: */
+.box p {
+    color: darkblue;
+    font-size: 16px;
+}
+
+/*   Create 3 buttons with: */
+.red {
+    background-color: red;
+    width: 100px;
+    height: 40px;
+    border: none;
+   
+}
+.green {
+    background-color: green;
+    width: 100px;
+    height: 40px;
+    border: none;
+   
+}
+.yellow {
+    background-color: yellow;
+    width: 100px;
+    height: 40px;
+    border: none;
+
+}
+
+/*Create a circle using a div */
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: orange;
+    border: 2px dashed brown;
+}
+
+/* Create a colored card layout  */
+.card {
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to bottom right, blue, purple);
+    border: 1px solid gray;
+}
