@@ -1,0 +1,47 @@
+/* Create a header section: */
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+    color: white;
+    border-bottom: 3px solid darkcyan;
+}
+
+/* Create a content box:*/
+.content {
+    width: 400px;
+    height: 200px;
+    background-color: lightgray;
+    border: 2px dashed black;
+    color: #333;
+}
+
+/*  Create a profile card:*/
+.profile {
+    width: 300px;
+    height: 350px;
+    background-image: url("./BG img.jpg ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 10px solid;
+}
+
+/* Create a footer section: */
+.footer {
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    border-top: 3px solid #000;
+    color: white;
+    display: flex;
+}
+
+/*  Create a notification box: */
+.notification {
+    width: 250px;
+    height: 100px;
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    color: #856404;
+}
