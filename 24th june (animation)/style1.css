@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.task-container {
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.hover-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+    width: 150px; /* Consistent width */
+    height: 50px; /* Consistent height */
+    display: inline-flex; /* For centering text vertically if needed */
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box; /* Include padding in width/height */
+}
+
+.hover-button:hover {
+    background-color: #28a745; /* Smooth background color change */
+    transform: scale(1.05); /* Grows slightly in size */
+}

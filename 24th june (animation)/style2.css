@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.task-container {
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.gear-icon {
+    font-size: 100px; /* Make the gear icon prominent */
+    display: inline-block; /* Essential for transform to work */
+    animation: rotateGear 4s linear infinite; /* Animation applied */
+}
+
+@keyframes rotateGear {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

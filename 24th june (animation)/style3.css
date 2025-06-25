@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.task-container {
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 600px; /* Wider to accommodate text slide */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.slide-in-heading {
+    opacity: 0; /* Start invisible */
+    transform: translateX(-100%); /* Start off-screen to the left */
+    animation: fadeInSlide 3s forwards; /* Animation applied: 3s duration, stays at end state */
+    text-align: center; /* Center the text within its own width */
+    width: 100%; /* Ensures heading takes full available width */
+    color: #0056b3; /* A nice blue color for the heading */
+}
+
+@keyframes fadeInSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Ends at its natural position (centered by parent container) */
+    }
+}

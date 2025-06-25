@@ -1,0 +1,53 @@
+body {
+    background-color: #e8b4ddd1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15cebf;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.main div {
+    display: flex;
+    align-items: center;
+}
+
+.nav-1,
+.nav-2,
+.nav-3 {
+    gap: 20px;
+}
+
+.nav-item {
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.logo {
+    font-weight: bold;
+    color: white;
+}
+
+.contact-button {
+    background-color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.company {
+    text-align: right;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
