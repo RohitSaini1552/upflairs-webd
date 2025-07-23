@@ -2,40 +2,57 @@ var prompt=require('prompt-sync')();
 
 
 // // 1. Even or Odd
+
 let num = prompt("Enter a number:");
 console.log(num % 2 === 0 ? "Even" : "Odd");
 
+
 // // 2. Positive, Negative, or Zero
+
 num = prompt("Enter a number:");
 num = parseInt(num);
 console.log(num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero");
 
+
 // // 3. Greater of Two Numbers
+
 let a = parseInt(prompt("Enter first number:"));
 let b = parseInt(prompt("Enter second number:"));
 console.log("Greater: " + (a > b ? a : b));
 
+
 // // 4. Divisible by 3
+
 num = parseInt(prompt("Enter a number:"));
 console.log(num % 3 === 0 ? "Divisible by 3" : "Not divisible by 3");
 
+
 // // 5. Multiple of 7
+
 num = parseInt(prompt("Enter a number:"));
 console.log(num % 7 === 0 ? "Multiple of 7" : "Not a multiple of 7");
 
+
 // // 6. Vowel or Consonant (lowercase only)
+
 let ch = prompt("Enter a lowercase character:");
 console.log("aeiou".includes(ch) ? "Vowel" : "Consonant");
 
+
 // // 7. Between 10 and 50
+
 num = parseInt(prompt("Enter a number:"));
 console.log(num > 10 && num < 50 ? "Between 10 and 50" : "Not in range");
 
+
 // // 8. 3-digit number
+
 num = parseInt(prompt("Enter a number:"));
 console.log(num >= 100 && num <= 999 ? "3-digit number" : "Not a 3-digit number");
 
+
 // // 9. Voting Eligibility
+
 let age = parseInt(prompt("Enter your age:"));
 console.log(age >= 18 ? "Eligible for voting" : "Not eligible");
 

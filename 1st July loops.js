@@ -110,7 +110,7 @@ for (let i = 1; i <= 3; i++) {
 }
 
 
-// // Combinations (a, b) such that a + b = 5 and 1 <= a,b <= 4
+// Combinations (a, b) such that a + b = 5 and 1 <= a,b <= 4
 
 for (let a = 1; a <= 4; a++) {
   for (let b = 1; b <= 4; b++) {

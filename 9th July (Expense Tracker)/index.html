@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Expense Tracker</h1>
+            <p>Track your income and expenses with detailed insights</p>
+        </header>
+
+        <section class="summary">
+            <div class="summary-card">
+                <h3>Total Balance</h3>
+                <div class="amount" id="totalBalance">$0.00</div>
+            </div>
+            <div class="summary-card income">
+                <h3>Total Income</h3>
+                <div class="amount" id="totalIncome">$0.00</div>
+            </div>
+            <div class="summary-card expense">
+                <h3>Total Expense</h3>
+                <div class="amount" id="totalExpense">$0.00</div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Add New Transaction</h2>
+            <form id="transactionForm">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" class="form-input" placeholder="Enter transaction description" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" class="form-input" step="0.01" placeholder="0.00" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="type">Type</label>
+                        <select id="type" class="form-select" required>
+                            <option value="income">Income</option>
+                            <option value="expense">Expense</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Add Transaction</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="transactions-section">
+            <div class="transactions-header">
+                <h2>Transaction History</h2>
+                <div class="transactions-count" id="transactionCount">0 transactions</div>
+            </div>
+            <div id="transactionsContainer">
+                <div class="empty-state">
+                    <div class="empty-icon">📊</div>
+                    <div class="empty-title">No transactions yet</div>
+                    <div class="empty-subtitle">Add your first transaction using the form above</div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
