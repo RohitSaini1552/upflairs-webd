@@ -1,0 +1,27 @@
+.task-manager-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow-y: auto;
+}
+
+.app-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1a2a3a;
+  text-align: center;
+  margin-bottom: 15px;
+  user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.task-form-wrapper, .task-list-wrapper {
+  background: #eef2f7;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.06);
+  flex: 1;
+  overflow-y: auto;
+}
